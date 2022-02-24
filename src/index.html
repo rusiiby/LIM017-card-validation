@@ -5,9 +5,91 @@
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
+  <body> 
+    <header>
+      <div class="logo">
+         <a href="/"><img src="img/icono-cine.png" alt=""></a> 
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#movies-premieres">En estreno</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="slider">
+      <div class="img-slider" >
+        <img src="img/slider-tony.jpg" alt="">
+      </div>
+    </div>
+    <div class="estrenos">
+      <h1> Proximos estrenos</h1>
+    
+    <div class="movies-premieres" id="movies-premieres">
+      <div class="marvel">
+        <div class="button-container">
+          <img src="img/antman.jpg" alt="">
+          <input type="button" value="COMPRAR"  name="opencard" id="iniciar"> 
+        </div>
+        <div class="button-container">
+          <img src="img/cap.jpg" alt="" >
+          <input type="button" value="COMPRAR" name="opencard" id="iniciar2"> 
+        </div>
+        <div class="button-container">
+          <img src="img/capitana.jpg"  alt= "" >
+          <input type="button" value="COMPRAR" name="opencard" id="iniciar3"> 
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="container-inner" id="show-validation">
+        <div class="intro" id="intros">
+        </div>
+      
+        <div class="container_card" id="container-card">
+          <div class="names">
+            <img src="img/name-bank.png" alt="">
+          </div>
+          <div class="chip-img">
+            <img src="img/chip.png" alt="">
+          </div>
+          <div class="container_casillas">
+            <div class="casillas">
+              <input type="text" id="number1" class="numero" maxlength="4" placeholder="XXXX" name="casilla" required pattern="\d+" >
+          
+            </div>
+            <div class="casillas">
+              <input type="text" id="number2" class="numero" maxlength="4" placeholder="XXXX" name="casilla">
+            </div>
+            <div class="casillas">
+              <input type="text"  id="number3" class="numero" maxlength="4" placeholder="XXXX" name="casilla"> 
+            </div>
+            <div class="casillas">
+              <input type="text" id="number4" class="numero" maxlength="4" placeholder="XXXX" name="casilla">
+            </div>
+            
+            
+          </div>
+          <div class="icon_visa">
+            <img src="img/visa.png" alt="">
+          </div>
+        </div>
+        <div id="valid-card">
+          Su tarjeta es valida!
+        </div>
+        <div id="invalid-card">
+          Su tarjeta es invalida :(
+        </div>
+        <div class="container-validation">
+          <button class="validator" id="validador">Validar</button>
+          <button class="close" id="close">cerrar</button>
+
+        </div>
+    </div>
+  </div>
+        <main></main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
